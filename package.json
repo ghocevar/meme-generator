@@ -12,6 +12,11 @@
   ],
   "author": "Gregor Hocevar",
   "license": "ISC",
+  "eslintConfig": {
+    "extends": [
+      "wesbos"
+    ]
+  },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "axios": "^0.19.0",
