@@ -14,10 +14,10 @@ const MemeGenerator = () => {
 
   const randomImage = event => {
     event.preventDefault();
-    const randNum = Math.floor(Math.random() * allMemeImgs.length);
-    const randMemeImg = allMemeImgs[randNum].url;
+    const randNum = Math.floor(Math.random() * allMemeImgs.data.memes.length);
+    const randMemeImg = allMemeImgs.data.memes[randNum];
 
-    setRandomImg(randMemeImg);
+    setRandomImg(randMemeImg.url);
   };
 
   return (
